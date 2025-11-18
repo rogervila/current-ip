@@ -332,7 +332,8 @@ If you encounter any issues or have questions, please file an issue on the GitHu
 
 ## Credits
 
-Developed and maintained by Roger Vilà
+Developed and maintained by [Roger Vilà](https://rogervila.es)
+
 Built mainly with AI
 
 ---
@@ -341,5 +342,3 @@ Built mainly with AI
 ## License
 
 Current IP is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
