@@ -5,7 +5,7 @@ namespace Tests\CurrentIP;
 use CurrentIP\CurrentIP;
 use PHPUnit\Framework\TestCase;
 
-final class CurrentIP extends TestCase
+final class CurrentIPTest extends TestCase
 {
     public function test_it_returns_ip(): void
     {
