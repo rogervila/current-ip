@@ -10,8 +10,8 @@ class CurrentIP
         if (!empty($_SERVER['REMOTE_ADDR'])) {
             $remoteAddr = $_SERVER['REMOTE_ADDR'];
             if (filter_var($remoteAddr, FILTER_VALIDATE_IP)) {
-                if (empty($_SERVER['HTTP_X_FORWARDED_FOR']) && 
-                    empty($_SERVER['HTTP_CLIENT_IP']) && 
+                if (empty($_SERVER['HTTP_X_FORWARDED_FOR']) &&
+                    empty($_SERVER['HTTP_CLIENT_IP']) &&
                     empty($_SERVER['HTTP_X_FORWARDED']) &&
                     empty($_SERVER['HTTP_X_CLUSTER_CLIENT_IP']) &&
                     empty($_SERVER['HTTP_FORWARDED_FOR']) &&
