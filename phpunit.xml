@@ -2,29 +2,28 @@
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
          backupGlobals="false"
+         backupStaticAttributes="false"
          bootstrap="vendor/autoload.php"
          colors="true"
          processIsolation="false"
          stopOnFailure="false"
-         cacheDirectory=".phpunit.cache"
-         backupStaticProperties="false"
 >
-    <coverage>
+    <coverage processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">./src</directory>
+        </include>
         <report>
             <clover outputFile="clover.xml"/>
         </report>
     </coverage>
-    <logging>
-        <junit outputFile="junit-logfile.xml"/>
-    </logging>
+    
     <testsuites>
         <testsuite name="Tests">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
-    <source>
-        <include>
-            <directory suffix=".php">./src</directory>
-        </include>
-    </source>
+    
+    <logging>
+        <junit outputFile="junit-logfile.xml"/>
+    </logging>
 </phpunit>
