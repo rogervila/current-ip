@@ -7,6 +7,13 @@ use PHPUnit\Framework\TestCase;
 
 final class CurrentIPTest extends TestCase
 {
+    public function test_it_returns_null_ip(): void
+    {
+        $ip = CurrentIP::get();
+
+        $this->assertNull($ip);
+    }
+
     public function test_it_returns_remote_addr_ip(): void
     {
         $_SERVER['REMOTE_ADDR'] = '1.1.1.1';

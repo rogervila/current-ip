@@ -1,5 +1,3 @@
-<p align="center"><img width="200" src="https://cdn.imgbin.com/1/18/15/imgbin-ip-address-computer-icons-internet-protocol-others-6RJYpnFNpxwdCCzaM7xK6c5qJ.jpg" alt="Current IP" /></p>
-
 [![Status](https://github.com/rogervila/current-ip/workflows/test/badge.svg)](https://github.com/rogervila/current-ip/actions)
 [![StyleCI](https://github.styleci.io/repos/211657121/shield?branch=main)](https://github.styleci.io/repos/211657121)
 

@@ -34,8 +34,8 @@ class CurrentIP
         foreach ($headers as $header) {
             if (!empty($_SERVER[$header])) {
                 $ip = $_SERVER[$header];
-                if (($commaPos = strpos($ip, ',')) !== false) {
-                    $ip = trim(substr($ip, 0, $commaPos));
+                if (($commaPosition = strpos($ip, ',')) !== false) {
+                    $ip = trim(substr($ip, 0, $commaPosition));
                 }
                 if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE)) {
                     return $ip;
